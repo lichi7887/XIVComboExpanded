@@ -18,7 +18,7 @@ XIVCombo is a plugin to allow for "one-button" combo chains, as well as implemen
 For some jobs, this frees a massive amount of hotbar space (looking at you, DRG). For most, it removes a lot of mindless tedium associated with having to press various buttons that have little logical reason to be separate.
 
 ## Installation
-* Place `https://github.com/daemitus/MyDalamudPlugins/raw/master/pluginmaster.json` in your /xlsettings 3rd party repo list to access this plugin.
+* Place `https://github.com/lichi7887/MyDalamudPlugins/raw/master/pluginmaster.json` in your /xlsettings 3rd party repo list to access this plugin.  （已修改为我自己的库）
 * Type `/xlplugins` in-game to access the plugin installer and updater.
 * A first-time setup pop-up should appear. 
   
