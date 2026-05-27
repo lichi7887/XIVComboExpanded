@@ -1110,18 +1110,6 @@ public class ConfigWindow : Window
     /// Returns the localized string name for the appropriate skill/status.
     /// </summary>
     /// <param name="skillID">ID of the skill.</param>
-    private static Language GetSupportedLanguage()
-    {
-        return Service.ClientState.ClientLanguage switch
-        {
-            Dalamud.Game.ClientLanguage.Japanese => Language.Japanese,
-            Dalamud.Game.ClientLanguage.English => Language.English,
-            Dalamud.Game.ClientLanguage.German => Language.German,
-            Dalamud.Game.ClientLanguage.French => Language.French,
-            _ => Language.English,
-        };
-    }
-
     /// <summary>
     /// Returns the localized string name for the appropriate skill/status.
     /// </summary>
@@ -1131,19 +1119,18 @@ public class ConfigWindow : Window
         if (skillID > 60000)
             return String.Empty;
 
-        var language = GetSupportedLanguage();
-        if (language != Language.English)
+        if (Service.ClientState.ClientLanguage != Dalamud.Game.ClientLanguage.English)
         {
             var enActionList = Service.DataManager.GameData.Excel.GetSheet<Action>(Language.English);
             var enSkill = enActionList.GetRow(skillID);
             var level = enSkill.ClassJobLevel != 0 ? $" (lvl {enSkill.ClassJobLevel})" : string.Empty;
-            var actionList = Service.DataManager.GameData.Excel.GetSheet<Action>(language);
+            var actionList = Service.DataManager.GameData.Excel.GetSheet<Action>();
             var skill = actionList.GetRow(skillID);
             return $"{skill.Name}\n{enSkill.Name}{level}";
         }
         else
         {
-            var actionList = Service.DataManager.GameData.Excel.GetSheet<Action>(language);
+            var actionList = Service.DataManager.GameData.Excel.GetSheet<Action>();
             var skill = actionList.GetRow(skillID);
             var level = skill.ClassJobLevel != 0 ? $" (lvl {skill.ClassJobLevel})" : string.Empty;
             return $"{skill.Name}{level}";
@@ -1160,7 +1147,7 @@ public class ConfigWindow : Window
         if (skillID > 60000)
             return String.Empty;
 
-        var statusList = Service.DataManager.GameData.Excel.GetSheet<Status>(GetSupportedLanguage());
+        var statusList = Service.DataManager.GameData.Excel.GetSheet<Status>();
         var status = statusList.GetRow(skillID);
         return status.Name.ExtractText();
 
