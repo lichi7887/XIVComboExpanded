@@ -1110,12 +1110,28 @@ public class ConfigWindow : Window
     /// Returns the localized string name for the appropriate skill/status.
     /// </summary>
     /// <param name="skillID">ID of the skill.</param>
+    private static Language GetSupportedLanguage()
+    {
+        return Service.ClientState.ClientLanguage switch
+        {
+            Dalamud.Game.ClientLanguage.Japanese => Language.Japanese,
+            Dalamud.Game.ClientLanguage.English => Language.English,
+            Dalamud.Game.ClientLanguage.German => Language.German,
+            Dalamud.Game.ClientLanguage.French => Language.French,
+            _ => Language.English,
+        };
+    }
+
+    /// <summary>
+    /// Returns the localized string name for the appropriate skill/status.
+    /// </summary>
+    /// <param name="skillID">ID of the skill.</param>
     private static string GetSkillName(uint skillID)
     {
         if (skillID > 60000)
             return String.Empty;
 
-        Language language = (Language)Service.ClientState.ClientLanguage + 1;
+        var language = GetSupportedLanguage();
         if (language != Language.English)
         {
             var enActionList = Service.DataManager.GameData.Excel.GetSheet<Action>(Language.English);
@@ -1144,8 +1160,7 @@ public class ConfigWindow : Window
         if (skillID > 60000)
             return String.Empty;
 
-        Language language = (Language)Service.ClientState.ClientLanguage + 1;
-        var statusList = Service.DataManager.GameData.Excel.GetSheet<Status>(language);
+        var statusList = Service.DataManager.GameData.Excel.GetSheet<Status>(GetSupportedLanguage());
         var status = statusList.GetRow(skillID);
         return status.Name.ExtractText();
 
