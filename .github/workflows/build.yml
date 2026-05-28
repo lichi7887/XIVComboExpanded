@@ -9,10 +9,10 @@ on:
     - master
 
 env:
-  PUBLIC_NAME: XIVComboExpanded
+  PUBLIC_NAME: XIVComboExpandedCN
   SOLUTION_NAME: XIVComboExpanded
-  INTERNAL_NAME: XIVComboExpanded
-  RELEASE_DIR: XIVComboExpanded\bin\Release\XIVComboExpanded
+  INTERNAL_NAME: XIVComboExpandedCN
+  RELEASE_DIR: XIVComboExpanded\bin\Release\XIVComboExpandedCN
   PERSONAL_PLUGIN_REPO: lichi7887/MyDalamudPlugins
   PR_PLUGIN_REPO: lichi7887/MyDalamudPlugins
   DOTNET_CLI_TELEMETRY_OPTOUT: true

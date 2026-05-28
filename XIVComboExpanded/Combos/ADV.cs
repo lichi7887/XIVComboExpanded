@@ -110,7 +110,7 @@ internal class StanceProvokeFeature : CustomCombo
     {
         if (actionID == ADV.Provoke)
         {
-            int job = (int)LocalPlayer?.ClassJob.RowId;
+            int job = (int?)LocalPlayer?.ClassJob.RowId ?? 0;
 
             if (!HasEffect(PLD.Buffs.IronWill)
                 && !HasEffect(WAR.Buffs.Defiance)
@@ -152,7 +152,7 @@ internal class ShirkStanceFeature : CustomCombo
     {
         if (actionID == ADV.Shirk && !IsCooldownUsable(ADV.Shirk))
         {
-            int job = (int)LocalPlayer?.ClassJob.RowId;
+            int job = (int?)LocalPlayer?.ClassJob.RowId ?? 0;
 
             if (HasEffect(PLD.Buffs.IronWill)
                 || HasEffect(WAR.Buffs.Defiance)
@@ -180,7 +180,8 @@ internal class HeadGrazePelotonFeature : CustomCombo
 
     protected override uint Invoke(uint actionID, uint lastComboMove, float comboTime, byte level)
     {
-        if (actionID == ADV.HeadGraze && ((int)LocalPlayer?.ClassJob.RowId == BRD.ClassID || (int)LocalPlayer?.ClassJob.RowId == BRD.JobID || (int)LocalPlayer?.ClassJob.RowId == MCH.JobID || (int)LocalPlayer?.ClassJob.RowId == DNC.JobID))
+        var job = (int?)LocalPlayer?.ClassJob.RowId ?? 0;
+        if (actionID == ADV.HeadGraze && (job == BRD.ClassID || job == BRD.JobID || job == MCH.JobID || job == DNC.JobID))
         {
             if (!HasEffect(ADV.Buffs.Peloton) && !InCombat() && CanUseAction(OriginalHook(ADV.Peloton)))
             {
@@ -201,7 +202,7 @@ internal class AdvAutoLucidDreamingFeature : CustomCombo
     {
         if (LocalPlayer?.CurrentMp < 5000 && CanUseAction(OriginalHook(ADV.LucidDreaming)) && IsCooldownUsable(ADV.LucidDreaming))
         {
-            int job = (int)LocalPlayer?.ClassJob.RowId;
+            int job = (int?)LocalPlayer?.ClassJob.RowId ?? 0;
             if (job == WHM.ClassID
             || (job == BLM.ClassID && IsEnabled(CustomComboPreset.AdvEnableBLMLucidFeature))
             || job == WHM.JobID

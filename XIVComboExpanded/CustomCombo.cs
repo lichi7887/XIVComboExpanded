@@ -21,7 +21,8 @@ internal abstract partial class CustomCombo
     /// </summary>
     protected CustomCombo()
     {
-        var presetInfo = this.Preset.GetAttribute<CustomComboInfoAttribute>();
+        var presetInfo = this.Preset.GetAttribute<CustomComboInfoAttribute>()
+            ?? throw new InvalidOperationException($"Missing {nameof(CustomComboInfoAttribute)} for preset {this.Preset}.");
         this.JobID = presetInfo.JobID;
         this.ClassID = this.JobID switch
         {

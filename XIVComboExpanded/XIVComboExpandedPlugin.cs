@@ -44,7 +44,7 @@ public sealed class XIVComboExpandedPlugin : IDalamudPlugin
 
         this.configWindow = new(this);
         this.oneTimeModal = new(this);
-        this.windowSystem = new("XIVComboExpanded");
+        this.windowSystem = new("XIVComboExpandedCN");
         this.windowSystem.AddWindow(this.configWindow);
         this.windowSystem.AddWindow(this.oneTimeModal);
 
@@ -55,12 +55,12 @@ public sealed class XIVComboExpandedPlugin : IDalamudPlugin
 
         Service.CommandManager.AddHandler(Command, new CommandInfo(this.OnCommand)
         {
-            HelpMessage = "Open the XIV Combo Expanded main interface.",
+            HelpMessage = "Open the XIVComboExpandedCN main interface.",
             ShowInHelp = true,
         });
     }
 
-    public string Name => "XIV Combo Expanded";
+    public string Name => "XIVComboExpandedCN";
 
     /// <inheritdoc/>
     public void Dispose()
@@ -79,7 +79,10 @@ public sealed class XIVComboExpandedPlugin : IDalamudPlugin
     {
         if (Service.Configuration.AutoJobChange)
         {
-            string job = Service.ObjectTable.LocalPlayer?.ClassJob.RowId != null ? CustomComboInfoAttribute.JobIDToName((byte)Service.ObjectTable.LocalPlayer?.ClassJob.RowId) : Service.Configuration.CurrentJobTab;
+            var localPlayer = Service.ObjectTable.LocalPlayer;
+            string job = localPlayer is not null
+                ? CustomComboInfoAttribute.JobIDToName((byte)localPlayer.ClassJob.RowId)
+                : Service.Configuration.CurrentJobTab;
             if (job == "Disciples of the Hand" || Service.Configuration.CurrentJobTab == "Disciples of the Hand")
                 job = "Adventurer";
             Service.Configuration.CurrentJobTab = job;
@@ -191,7 +194,10 @@ public sealed class XIVComboExpandedPlugin : IDalamudPlugin
 
                 if (Service.Configuration.AutoJobChange)
                 {
-                    string job = Service.ObjectTable.LocalPlayer?.ClassJob.RowId != null ? CustomComboInfoAttribute.JobIDToName((byte)Service.ObjectTable.LocalPlayer?.ClassJob.RowId) : Service.Configuration.CurrentJobTab;
+                    var localPlayer = Service.ObjectTable.LocalPlayer;
+                    string job = localPlayer is not null
+                        ? CustomComboInfoAttribute.JobIDToName((byte)localPlayer.ClassJob.RowId)
+                        : Service.Configuration.CurrentJobTab;
                     if (job == "Disciples of the Hand" || Service.Configuration.CurrentJobTab == "Disciples of the Hand")
                         job = "Adventurer";
                     Service.Configuration.CurrentJobTab = job;

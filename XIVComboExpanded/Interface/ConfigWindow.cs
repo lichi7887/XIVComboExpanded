@@ -26,7 +26,7 @@ namespace XIVComboExpandedPlugin.Interface;
 public class ConfigWindow : Window
 {
     bool themePushed = false;
-    StyleModel pluginStyle = StyleModel.Deserialize("DS1H4sIAAAAAAAACq1YWXPTMBD+K4yfO4xlWT76RhugzFCmQ8twvCmJmpi4cXCccHT631lLWl1xStqQF1vSfp/20nqV+4hHp+RlfBKNo9P76Et0WvSDr/L5cBJNYDXuZ6ZaTGixWIvFLxmI3cLqSTTT03MtW+kxH+uJ7xqcajCVeyz0RK2l7gJNUim1DLBqtglmEzm72lGyn/0By3KDFjaSL2st0qGVG6nTSbTVjD/185dW7bchZo71fwa341xPU8/aSQN23kc34len14lel89v+vlZPkG+FxxVaz6uxXR3dwmQTwP4XC2nzc+zmREmZUJYVuQaQ4oioYxqpF00BOfzqp46eGOUhijtlJFXzWqzcmULFC5QutDiZQryZ007Fa0Rz7M0j1mpMRlLyzjRuJShnkYxBb6ec7DvIO3etPxOuJ5gSZkSgjoS2I6UGUFXmFWzoya4aLaiddyfgdKgHUbBDiWPHYY8ryZdtbUniMoNE81ClTZov1m0mVB1tWvN8+CBDkTanJvkSNwY2MWQ5bypa75aOz55KtGlWG7OeOtGJzVxQVjqAK4nLWw69iCPBd/Iv237AjTsNBzt8ZnHEWaBCjMqbUaSyoyGqcIgmET86ifiN3/VOaJisrjk7cJQlPIoZZrBjCRBweKyiD1l6gpOkucYhob0L6qoDCMC3TOMeP+i8989s5uua5bPzVmFPs7xiuO4o3chuFu2WEFzEqcUPQbDOEVvm5HMREoMPDRjuIhDuAwidDV6Gh3txkeseMu7pn32gTQMoZ6U5j0WfaV+6G+zuMtzZKX5KNbVH/G2rVbP/FxYgtCipx0WyxNY9DR1bvZXoX+W7mOLDxAcW/f5+NPytpls3Jpvc2E4NXAo05r0fqVlEpAFejEv2ZAqyeQPWwkie5aMAtWomSyq5eyqFdtK2K6A5TGhDK1Lc5bmGUaYwCjJqDmhRUoJzR2y13er7rfzlcE4oXvc0FzVTfe+Woq1PaVYxk1j4ZVuA/Ajik0gKIutGWUB7KJad80MWgmbyBh/7/s3gNi3GfrE6zj7XlMVoCO6SMmiO7aubZb/hel9NZt3xxF99HrjxxoIK/6q/levDohMN+vXohaTTrgddIKlpi8Wcp8SU5n2F4hRy2ejtlnd8HYm9m1llSsB8oFvL8AZteeQvfso+wGjLgeQ4yF4v2F5gBxVd45p2Etjs4J29cf8spnyWuEOA4Ez+pse9MrRaTSC9ubFp3cR3D3VlYnvZK/vGGWkLbJ5cDjcVIB77QFSh124xEH3uFtrfW7sz40H+jcjO9uxNI8xoi7nfCePs4Gdqx0p01mqCu3Ift/zgRny9GJvorqfntoyhq4uM9eNtqqlQfV36WwrCR+owfOh5PCPAWt0SpULfefY5iLr11Wdj42GnnPgD4QgLCzGGu9y2h6sKPBEpoYzY26o7Xej6M+qFx7JriVBFCo4zD78BaxA6BSzEQAA");
+    StyleModel pluginStyle = StyleModel.Deserialize("DS1H4sIAAAAAAAACq1YWXPTMBD+K4yfO4xlWT76RhugzFCmQ8twvCmJmpi4cXCccHT631lLWl1xStqQF1vSfp/20nqV+4hHp+RlfBKNo9P76Et0WvSDr/L5cBJNYDXuZ6ZaTGixWIvFLxmI3cLqSTTT03MtW+kxH+uJ7xqcajCVeyz0RK2l7gJNUim1DLBqtglmEzm72lGyn/0By3KDFjaSL2st0qGVG6nTSbTVjD/185dW7bchZo71fwa341xPU8/aSQN23kc34len14lel89v+vlZPkG+FxxVaz6uxXR3dwmQTwP4XC2nzc+zmREmZUJYVuQaQ4oioYxqpF00BOfzqp46eGOUhijtlJFXzWqzcmULFC5QutDiZQryZ007Fa0Rz7M0j1mpMRlLyzjRuJShnkYxBb6ec7DvIO3etPxOuJ5gSZkSgjoS2I6UGUFXmFWzoya4aLaiddyfgdKgHUbBDiWPHYY8ryZdtbUniMoNE81ClTZov1m0mVB1tWvN8+CBDkTanJvkSNwY2MWQ5bypa75aOz55KtGlWG7OeOtGJzVxQVjqAK4nLWw69iCPBd/Iv237AjTsNBzt8ZnHEWaBCjMqbUaSyoyGqcIgmET86ifiN3/VOaJisrjk7cJQlPIoZZrBjCRBweKyiD1l6gpOkucYhob0L6qoDCMC3TOMeP+i8989s5uua5bPzVmFPs7xiuO4o3chuFu2WEFzEqcUPQbDOEVvm5HMREoMPDRjuIhDuAwidDV6Gh3txkeseMu7pn32gTQMoZ6U5j0WfaV+6G+zuMtzZKX5KNbVH/G2rVbP/FxYgtCipx0WyxNY9DR1bvZXoX+W7mOLDxAcW/f5+NPytpls3Jpvc2E4NXAo05r0fqVlEpAFejEv2ZAqyeQPWwkie5aMAtWomSyq5eyqFdtK2K6A5TGhDK1Lc5bmGUaYwCjJqDmhRUoJzR2y13er7rfzlcE4oXvc0FzVTfe+Woq1PaVYxk1j4ZVuA/Ajik0gKIutGWUB7KJad80MWgmbyBh/7/s3gNi3GfrE6zj7XlMVoCO6SMmiO7aubZb/hel9NZt3xxF99HrjxxoIK/6q/levDohMN+vXohaTTrgddIKlpi8Wcp8SU5n2F4hRy2ejtlnd8HYm9m1llSsB8oFvL8AZteeQvfso+wGjLgeQ4yF4v2F5gBxVd45p2Etjs4J29cf8spnyWuEOA4Ez+pse9MrRaTSC9ubFp3cR3D3VlYnvZK/vGGWkLbJ5cDjcVIB77QFSh124xEH3uFtrfW7sz40H+jcjO9uxNI8xoi7nfCePs4Gdqx0p01mqCu3Ift/zgRny9GJvorqfntoyhq4uM9eNtqqlQfV36WwrCR+owfOh5PCPAWt0SpULfefY5iLr11Wdj42GnnPgD4QgLCzGGu9y2h6sKPBEpoYzY26o7Xej6M+qFx7JriVBFCo4zD78BaxA6BSzEQAA")!;
     //     Code to be executed before conditionals are applied and the window is drawn.
     public override void PreDraw()
     {
@@ -64,7 +64,7 @@ public class ConfigWindow : Window
     /// Initializes a new instance of the <see cref="ConfigWindow"/> class.
     /// </summary>
     public ConfigWindow(XIVComboExpandedPlugin Plugin)
-        : base($"XIV Combo Expanded v{Service.Interface.Manifest.AssemblyVersion}")
+        : base($"XIVComboExpandedCN v{Service.Interface.Manifest.AssemblyVersion}")
     {
         this.Plugin = Plugin;
         this.RespectCloseHotkey = true;
@@ -73,7 +73,8 @@ public class ConfigWindow : Window
             .GetValues<CustomComboPreset>()
             .Where(preset => (int)preset > 100 && preset != CustomComboPreset.Disabled)
             .Select(preset => (Preset: preset, Info: preset.GetAttribute<CustomComboInfoAttribute>()))
-            .Where(tpl => tpl.Info != null && Service.Configuration.GetParent(tpl.Preset) == null)
+            .Where(tpl => tpl.Info is not null && Service.Configuration.GetParent(tpl.Preset) == null)
+            .Select(tpl => (tpl.Preset, Info: tpl.Info!))
             .OrderBy(tpl => CustomComboInfoAttribute.RoleIDToOrder(tpl.Info.RoleName))
             .ThenBy(tpl => tpl.Info.JobID)
             .ThenBy(tpl => tpl.Info.Order)
@@ -98,6 +99,8 @@ public class ConfigWindow : Window
             kvp => kvp.Key,
             kvp => kvp.Value
                 .Select(preset => (Preset: preset, Info: preset.GetAttribute<CustomComboInfoAttribute>()))
+                .Where(tpl => tpl.Info is not null)
+                .Select(tpl => (tpl.Preset, Info: tpl.Info!))
                 .OrderBy(tpl => tpl.Info.Order).ToArray());
 
         this.SizeCondition = ImGuiCond.FirstUseEver;
@@ -208,7 +211,9 @@ public class ConfigWindow : Window
                             using (ImRaii.PushFont(UiBuilder.MonoFont))
                             using (ImRaii.PushColor(ImGuiCol.Text, ImGuiColors.ParsedGold))
                             {
-                                ImGui.Text($" " + Service.Configuration.CurrentJobTab + "\n " + (CustomComboInfoAttribute.JobIDToRole(jobID) != "Adventurer" ? CustomComboInfoAttribute.JobIDToRole(jobID) : "Warrior of Light"));
+                                var localizedRole = ComboTextLocalizer.LocalizeRole(CustomComboInfoAttribute.JobIDToRole(jobID));
+                                var localizedJob = ComboTextLocalizer.LocalizeJob(Service.Configuration.CurrentJobTab);
+                                ImGui.Text($" {localizedJob}\n {localizedRole}");
                             }
 
                             ImGui.Separator();
@@ -220,7 +225,7 @@ public class ConfigWindow : Window
                                 {
                                     if (Service.Configuration.EnableExpandedCombos && Service.Configuration.EnableAccessibilityCombos && Service.Configuration.EnableSecretCombos)
                                     {
-                                        using (var secretTab = ImRaii.TabItem("Secret"))
+                                        using (var secretTab = ImRaii.TabItem("机密"))
                                         {
                                             if (secretTab)
                                             {
@@ -240,7 +245,7 @@ public class ConfigWindow : Window
 
                                     if (Service.Configuration.EnableExpandedCombos && Service.Configuration.EnableAccessibilityCombos)
                                     {
-                                        using (var accessibilityTab = ImRaii.TabItem("Accessibility"))
+                                        using (var accessibilityTab = ImRaii.TabItem("无障碍"))
                                         {
                                             if (accessibilityTab)
                                             {
@@ -260,7 +265,7 @@ public class ConfigWindow : Window
 
                                     if (Service.Configuration.EnableExpandedCombos)
                                     {
-                                        using (var expandedTab = ImRaii.TabItem("Expanded"))
+                                        using (var expandedTab = ImRaii.TabItem("扩展"))
                                         {
                                             if (expandedTab)
                                             {
@@ -280,7 +285,7 @@ public class ConfigWindow : Window
 
                                     if (Service.Configuration.CurrentJobTab != "Adventurer" && Service.Configuration.CurrentJobTab != "Disciples of the Land" && Service.Configuration.CurrentJobTab != "Sage")
                                     {
-                                        using (var classicTab = ImRaii.TabItem("Classic"))
+                                        using (var classicTab = ImRaii.TabItem("经典"))
                                         {
                                             if (classicTab)
                                             {
@@ -416,7 +421,7 @@ public class ConfigWindow : Window
                             using (ImRaii.PushFont(UiBuilder.MonoFont))
                             using (ImRaii.PushColor(ImGuiCol.Text, ImGuiColors.TankBlue))
                             {
-                                ImGui.Text($"Expanded Combos");
+                                ImGui.Text($"扩展连击");
                             }
 
                             ImGui.Separator();
@@ -431,7 +436,7 @@ public class ConfigWindow : Window
                             ImGui.Spacing();
 
                             var showExpanded = Service.Configuration.EnableExpandedCombos;
-                            if (ImGui.Checkbox("Enable the expanded features for XIVCombo.", ref showExpanded))
+                            if (ImGui.Checkbox("启用 XIVCombo 的扩展功能。", ref showExpanded))
                             {
                                 Service.Configuration.EnableExpandedCombos = showExpanded;
                                 if (!showExpanded)
@@ -455,13 +460,13 @@ public class ConfigWindow : Window
                                 using (ImRaii.PushFont(UiBuilder.MonoFont))
                                 using (ImRaii.PushColor(ImGuiCol.Text, ImGuiColors.HealerGreen))
                                 {
-                                    ImGui.Text($"Accessibility Combos");
+                                    ImGui.Text($"无障碍连击");
                                 }
                                 ImGui.Separator();
 
                                 ImGui.BulletText("Those combos are non-optimal routes which simplify a rotation overall.");
                                 ImGui.BulletText("They are intuitive, and aim at considerably reducing button bloating.");
-                                ImGui.BulletText("They are meant to be used to give accessibility options to everyone.");
+                                ImGui.BulletText("这些功能旨在为所有人提供无障碍选项。");
                                 ImGui.BulletText("They will often lower your ability to perform well in high-end content.");
 
                                 ImGui.Separator();
@@ -469,7 +474,7 @@ public class ConfigWindow : Window
                                 ImGui.Spacing();
 
                                 var showAccessibility = Service.Configuration.EnableAccessibilityCombos;
-                                if (ImGui.Checkbox("Enable accessibility combos.", ref showAccessibility))
+                                if (ImGui.Checkbox("启用无障碍连击。", ref showAccessibility))
                                 {
                                     Service.Configuration.EnableAccessibilityCombos = showAccessibility;
                                     if (!showAccessibility) Service.Configuration.EnableSecretCombos = false;
@@ -490,7 +495,7 @@ public class ConfigWindow : Window
                                     using (ImRaii.PushFont(UiBuilder.MonoFont))
                                     using (ImRaii.PushColor(ImGuiCol.Text, ImGuiColors.DPSRed))
                                     {
-                                        ImGui.Text($"Secret Combos");
+                                        ImGui.Text($"机密连击");
                                     }
 
                                     ImGui.Separator();
@@ -505,7 +510,7 @@ public class ConfigWindow : Window
                                     ImGui.Spacing();
 
                                     var showSecrets = Service.Configuration.EnableSecretCombos;
-                                    if (ImGui.Checkbox("Enable secret forbidden knowledge.\nThis option requires the accessibility combos to be enabled.", ref showSecrets))
+                                    if (ImGui.Checkbox("启用机密功能。\n此选项需要先启用无障碍连击。", ref showSecrets))
                                     {
                                         Service.Configuration.EnableSecretCombos = showSecrets;
                                         Service.Configuration.Save();
@@ -580,10 +585,10 @@ public class ConfigWindow : Window
                         ImGui.Spacing();
 
                         ImGui.BulletText($"{Enum.GetValues<CustomComboPreset>().Where(preset => (int)preset > 100 && preset != CustomComboPreset.Disabled && Service.Configuration.IsEnabled(preset)).Count()} combos are currently enabled.");
-                        ImGui.BulletText($"{Enum.GetValues<CustomComboPreset>().Where(preset => (int)preset > 100 && preset != CustomComboPreset.Disabled && !Service.Configuration.IsExpanded(preset) && !Service.Configuration.IsAccessible(preset) && !Service.Configuration.IsSecret(preset)).Count()} Classic combos are available.");
-                        ImGui.BulletText($"{Enum.GetValues<CustomComboPreset>().Where(preset => (int)preset > 100 && preset != CustomComboPreset.Disabled && Service.Configuration.IsExpanded(preset) && !Service.Configuration.IsAccessible(preset) && !Service.Configuration.IsSecret(preset)).Count()} Expanded combos are available.");
-                        ImGui.BulletText($"{Enum.GetValues<CustomComboPreset>().Where(preset => (int)preset > 100 && preset != CustomComboPreset.Disabled && !Service.Configuration.IsExpanded(preset) && Service.Configuration.IsAccessible(preset) && !Service.Configuration.IsSecret(preset)).Count()} Accessibility combos are available.");
-                        ImGui.BulletText($"{Enum.GetValues<CustomComboPreset>().Where(preset => (int)preset > 100 && preset != CustomComboPreset.Disabled && !Service.Configuration.IsExpanded(preset) && !Service.Configuration.IsAccessible(preset) && Service.Configuration.IsSecret(preset)).Count()} Secret combos are available.");
+                        ImGui.BulletText($"{Enum.GetValues<CustomComboPreset>().Where(preset => (int)preset > 100 && preset != CustomComboPreset.Disabled && !Service.Configuration.IsExpanded(preset) && !Service.Configuration.IsAccessible(preset) && !Service.Configuration.IsSecret(preset)).Count()} 个经典连击可用。");
+                        ImGui.BulletText($"{Enum.GetValues<CustomComboPreset>().Where(preset => (int)preset > 100 && preset != CustomComboPreset.Disabled && Service.Configuration.IsExpanded(preset) && !Service.Configuration.IsAccessible(preset) && !Service.Configuration.IsSecret(preset)).Count()} 个扩展连击可用。");
+                        ImGui.BulletText($"{Enum.GetValues<CustomComboPreset>().Where(preset => (int)preset > 100 && preset != CustomComboPreset.Disabled && !Service.Configuration.IsExpanded(preset) && Service.Configuration.IsAccessible(preset) && !Service.Configuration.IsSecret(preset)).Count()} 个无障碍连击可用。");
+                        ImGui.BulletText($"{Enum.GetValues<CustomComboPreset>().Where(preset => (int)preset > 100 && preset != CustomComboPreset.Disabled && !Service.Configuration.IsExpanded(preset) && !Service.Configuration.IsAccessible(preset) && Service.Configuration.IsSecret(preset)).Count()} 个机密连击可用。");
                         ImGui.Text($"{Enum.GetValues<CustomComboPreset>().Where(preset => (int)preset > 100 && preset != CustomComboPreset.Disabled).Count()} total combos are available.");
 
                         ImGui.Separator();
@@ -687,7 +692,7 @@ public class ConfigWindow : Window
         var accessibility = Service.Configuration.IsAccessible(preset);
         var conflicts = Service.Configuration.GetConflicts(preset);
         var parent = Service.Configuration.GetParent(preset);
-        string section = preset.GetAttribute<SectionComboAttribute>()?.Section;
+        string section = ComboTextLocalizer.LocalizeTitle(preset.GetAttribute<SectionComboAttribute>()?.Section ?? string.Empty);
         uint[] icons = [];
 
         switch (tab)
@@ -734,10 +739,12 @@ public class ConfigWindow : Window
         uint[] icons = [];
         string section = string.Empty;
 
-        if (preset.GetAttribute<IconsComboAttribute>()?.Icons.Length > 0)
-            icons = preset.GetAttribute<IconsComboAttribute>().Icons;
-        if (preset.GetAttribute<SectionComboAttribute>()?.Section != null)
-            section = preset.GetAttribute<SectionComboAttribute>().Section.ToString();
+        var iconsAttribute = preset.GetAttribute<IconsComboAttribute>();
+        if (iconsAttribute is not null && iconsAttribute.Icons.Length > 0)
+            icons = iconsAttribute.Icons;
+        var sectionAttribute = preset.GetAttribute<SectionComboAttribute>();
+        if (sectionAttribute is not null)
+            section = ComboTextLocalizer.LocalizeTitle(sectionAttribute.Section);
 
         switch (tab)
         {
@@ -761,19 +768,20 @@ public class ConfigWindow : Window
                 break;
         }
 
-        if (preset.GetAttribute<SectionComboAttribute>()?.Section != null)
+        if (sectionAttribute is not null)
         {
-            if (previousSection != preset.GetAttribute<SectionComboAttribute>()?.Section && previousSection != "child")
+            if (previousSection != sectionAttribute.Section && previousSection != "child")
             {
                 this.DrawSection(tab, preset, info, ref i);
-                previousSection = preset.GetAttribute<SectionComboAttribute>()?.Section;
+                previousSection = sectionAttribute.Section;
             }
         }
 
 
         ImGui.PushItemWidth(200);
 
-        if (ImGui.Checkbox(info.FancyName, ref enabled))
+        var localizedName = ComboTextLocalizer.LocalizeTitle(info.FancyName);
+        if (ImGui.Checkbox(localizedName, ref enabled))
         {
             if (enabled)
             {
@@ -805,7 +813,7 @@ public class ConfigWindow : Window
             if (ImGui.IsItemHovered())
             {
                 ImGui.BeginTooltip();
-                ImGui.TextUnformatted("Expanded combo");
+                ImGui.TextUnformatted("扩展连击");
                 ImGui.EndTooltip();
             }
         }
@@ -823,7 +831,7 @@ public class ConfigWindow : Window
             if (ImGui.IsItemHovered())
             {
                 ImGui.BeginTooltip();
-                ImGui.TextUnformatted("Accessibility combo");
+                ImGui.TextUnformatted("无障碍连击");
                 ImGui.EndTooltip();
             }
         }
@@ -841,7 +849,7 @@ public class ConfigWindow : Window
             if (ImGui.IsItemHovered())
             {
                 ImGui.BeginTooltip();
-                ImGui.TextUnformatted("Secret combo");
+                ImGui.TextUnformatted("机密连击");
                 ImGui.EndTooltip();
             }
         }
@@ -869,7 +877,7 @@ public class ConfigWindow : Window
                 bool isStatus = false;
                 bool isUTL = false;
                 string hoverName = string.Empty;
-                ISharedImmediateTexture icon;
+                ISharedImmediateTexture? icon;
 
                 // Workaround which will work until it won't work anymore
                 if (iconId > 60000)
@@ -890,7 +898,7 @@ public class ConfigWindow : Window
                 if (isStatus)
                 {
                     ImGui.SetCursorPosY(ImGui.GetCursorPosY() - 4f);
-                    ImGui.Image(icon.GetWrapOrEmpty().Handle, new System.Numerics.Vector2(24f * scale, 32f * scale));
+                    ImGui.Image(icon!.GetWrapOrEmpty().Handle, new System.Numerics.Vector2(24f * scale, 32f * scale));
                     ImGui.SetCursorPosY(ImGui.GetCursorPosY() + 4f);
                     hoverName = GetStatusName(iconId);
                 }
@@ -899,12 +907,12 @@ public class ConfigWindow : Window
                     ImGui.Image(GetIcon(IconsComboAttribute.Blank).GetWrapOrEmpty().Handle, new System.Numerics.Vector2(2f * scale, 24f * scale));
                     ImGui.SameLine(0, 0);
                     ImGui.SetCursorPosY(ImGui.GetCursorPosY() + 3f);
-                    ImGui.Image(icon.GetWrapOrEmpty().Handle, new System.Numerics.Vector2(20f * scale, 20f * scale));
+                    ImGui.Image(icon!.GetWrapOrEmpty().Handle, new System.Numerics.Vector2(20f * scale, 20f * scale));
                     ImGui.SetCursorPosY(ImGui.GetCursorPosY() - 3f);
                 }
                 else
                 {
-                    ImGui.Image(icon.GetWrapOrEmpty().Handle, new System.Numerics.Vector2(24f*scale, 24f*scale));
+                    ImGui.Image(icon!.GetWrapOrEmpty().Handle, new System.Numerics.Vector2(24f*scale, 24f*scale));
                     hoverName = GetSkillName(iconId);
                 }
 
@@ -942,7 +950,7 @@ public class ConfigWindow : Window
 
         using (ImRaii.PushColor(ImGuiCol.Text, this.shadedColor))
         {
-        ImGui.TextWrapped($"{info.Description}");
+        ImGui.TextWrapped(ComboTextLocalizer.LocalizeDescription(info.Description));
         }
 
         ImGui.Spacing();
@@ -977,29 +985,36 @@ public class ConfigWindow : Window
                 }
 
                 var conflictInfo = conflict.GetAttribute<CustomComboInfoAttribute>();
-                return $" · {conflictInfo.FancyName}";
+                if (conflictInfo is null)
+                    return string.Empty;
+
+                return $" · {ComboTextLocalizer.LocalizeTitle(conflictInfo.FancyName)}";
             }).Aggregate((t1, t2) => $"{t1}{t2}");
 
             if (conflictText.Length > 0)
             {
-                ImGui.TextColored(ImGuiColors.DPSRed, $"Conflicts with {conflictText}");
+                ImGui.TextColored(ImGuiColors.DPSRed, $"冲突项：{conflictText}");
                 ImGui.Spacing();
             }
         }
 
         if (preset == CustomComboPreset.DancerDanceComboCompatibility && enabled)
         {
-            var actions = Service.Configuration.DancerDanceCompatActionIDs.Cast<int>().ToArray();
+            var actions = Service.Configuration.DancerDanceCompatActionIDs
+                .Select(id => unchecked((int)id))
+                .ToArray();
 
             var inputChanged = false;
-            inputChanged |= ImGui.InputInt("Emboite (Red) ActionID", ref actions[0], 0);
-            inputChanged |= ImGui.InputInt("Entrechat (Blue) ActionID", ref actions[1], 0);
-            inputChanged |= ImGui.InputInt("Jete (Green) ActionID", ref actions[2], 0);
-            inputChanged |= ImGui.InputInt("Pirouette (Yellow) ActionID", ref actions[3], 0);
+            inputChanged |= ImGui.InputInt("蔷薇曲脚步（红）动作 ID", ref actions[0], 0);
+            inputChanged |= ImGui.InputInt("小鸟交叠跳（蓝）动作 ID", ref actions[1], 0);
+            inputChanged |= ImGui.InputInt("绿叶小踢腿（绿）动作 ID", ref actions[2], 0);
+            inputChanged |= ImGui.InputInt("金冠趾尖转（黄）动作 ID", ref actions[3], 0);
 
             if (inputChanged)
             {
-                Service.Configuration.DancerDanceCompatActionIDs = actions.Cast<uint>().ToArray();
+                Service.Configuration.DancerDanceCompatActionIDs = actions
+                    .Select(id => unchecked((uint)Math.Max(0, id)))
+                    .ToArray();
                 Service.Configuration.Save();
             }
 
@@ -1072,7 +1087,7 @@ public class ConfigWindow : Window
     /// Returns a ISharedImmediateTexture for the appropriate skill.
     /// </summary>
     /// <param name="skillID">ID of the skill.</param>
-    private static ISharedImmediateTexture GetSkillIcon(uint skillID)
+    private static ISharedImmediateTexture? GetSkillIcon(uint skillID)
     {
 
         List<uint> whiteList = new List<uint>();
@@ -1080,6 +1095,9 @@ public class ConfigWindow : Window
 
         var actionList = Service.DataManager.GameData.Excel.GetSheet<Action>();
         var skill = actionList.GetRow(skillID);
+        if (skill.RowId == 0)
+            return null;
+
         // Check if the icon isn't Cure's AND isn't actually Cure
         if ((skill.Icon == 405 && skill.RowId != 120) || (!skill.IsPlayerAction && skill.ClassJobLevel == 0) && !whiteList.Contains(skillID))
             return null;
@@ -1090,10 +1108,13 @@ public class ConfigWindow : Window
     /// Returns a ISharedImmediateTexture for the appropriate status.
     /// </summary>
     /// <param name="statusID">ID of the status.</param>
-    private static ISharedImmediateTexture GetStatusIcon(uint statusID)
+    private static ISharedImmediateTexture? GetStatusIcon(uint statusID)
     {
         var statusList = Service.DataManager.GameData.Excel.GetSheet<Status>();
         var status = statusList.GetRow(statusID);
+        if (status.RowId == 0)
+            return null;
+
         return GetIcon((uint)status.Icon);
 
         // If ever needed for some reason
@@ -1110,10 +1131,6 @@ public class ConfigWindow : Window
     /// Returns the localized string name for the appropriate skill/status.
     /// </summary>
     /// <param name="skillID">ID of the skill.</param>
-    /// <summary>
-    /// Returns the localized string name for the appropriate skill/status.
-    /// </summary>
-    /// <param name="skillID">ID of the skill.</param>
     private static string GetSkillName(uint skillID)
     {
         if (skillID > 60000)
@@ -1123,15 +1140,24 @@ public class ConfigWindow : Window
         {
             var enActionList = Service.DataManager.GetExcelSheet<Action>(Dalamud.Game.ClientLanguage.English);
             var enSkill = enActionList.GetRow(skillID);
+            if (enSkill.RowId == 0)
+                return string.Empty;
+
             var level = enSkill.ClassJobLevel != 0 ? $" (lvl {enSkill.ClassJobLevel})" : string.Empty;
             var actionList = Service.DataManager.GetExcelSheet<Action>(Service.ClientState.ClientLanguage);
             var skill = actionList.GetRow(skillID);
+            if (skill.RowId == 0)
+                return string.Empty;
+
             return $"{skill.Name}\n{enSkill.Name}{level}";
         }
         else
         {
             var actionList = Service.DataManager.GetExcelSheet<Action>(Service.ClientState.ClientLanguage);
             var skill = actionList.GetRow(skillID);
+            if (skill.RowId == 0)
+                return string.Empty;
+
             var level = skill.ClassJobLevel != 0 ? $" (lvl {skill.ClassJobLevel})" : string.Empty;
             return $"{skill.Name}{level}";
         }
@@ -1149,6 +1175,9 @@ public class ConfigWindow : Window
 
         var statusList = Service.DataManager.GetExcelSheet<Status>(Service.ClientState.ClientLanguage);
         var status = statusList.GetRow(skillID);
+        if (status.RowId == 0)
+            return string.Empty;
+
         return status.Name.ExtractText();
 
     }
