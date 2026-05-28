@@ -1,10 +1,10 @@
 {
-    "Author": "attick, daemitus, Khayle",
+    "Author": "attick, daemitus, Khayle, lichi7887",
     "Name": "XIV Combo Expanded",
     "Punchline": "Condenses combos and mutually exclusive abilities onto a single button.",
-    "Description": "This plugin condenses combos and mutually exclusive abilities onto a single button. For example, a 1-2-3 combo would become 1-1-1.",
-    "RepoUrl": "https://github.com/daemitus/XIVComboPlugin",
-    "IconUrl": "https://raw.githubusercontent.com/daemitus/XIVComboPlugin/master/res/icon.png",
+    "Description": "国服修复版，非汉化，This plugin condenses combos and mutually exclusive abilities onto a single button. For example, a 1-2-3 combo would become 1-1-1.",
+    "RepoUrl": "https://github.com/lichi7887/XIVComboExpanded",
+    "IconUrl": "https://raw.githubusercontent.com/lichi7887/XIVComboExpanded/master/res/icon.png",
     "ImageUrls": [],
     "Tags": ["combo", "xivcombo", "expanded", "pcombo"]
 }

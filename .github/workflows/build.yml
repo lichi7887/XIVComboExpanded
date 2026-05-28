@@ -13,8 +13,8 @@ env:
   SOLUTION_NAME: XIVComboExpanded
   INTERNAL_NAME: XIVComboExpanded
   RELEASE_DIR: XIVComboExpanded\bin\Release\XIVComboExpanded
-  PERSONAL_PLUGIN_REPO: daemitus/MyDalamudPlugins
-  PR_PLUGIN_REPO: daemitus/DalamudPlugins
+  PERSONAL_PLUGIN_REPO: lichi7887/MyDalamudPlugins
+  PR_PLUGIN_REPO: lichi7887/MyDalamudPlugins
   DOTNET_CLI_TELEMETRY_OPTOUT: true
 
 jobs:

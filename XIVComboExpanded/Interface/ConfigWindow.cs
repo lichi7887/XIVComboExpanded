@@ -610,7 +610,7 @@ public class ConfigWindow : Window
                         ImGui.SameLine();
                         ImGui.InputText("", ref url, 100, ImGuiInputTextFlags.ReadOnly);
 
-                        url = "https://github.com/daemitus/MyDalamudPlugins/raw/master/pluginmaster.json";
+                        url = "https://raw.githubusercontent.com/lichi7887/MyDalamudPlugins/master/pluginmaster.json";
 
                         if (ImGui.Button("Copy the Dalamud Repository URL"))
                         {
