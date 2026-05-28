@@ -1121,16 +1121,16 @@ public class ConfigWindow : Window
 
         if (Service.ClientState.ClientLanguage != Dalamud.Game.ClientLanguage.English)
         {
-            var enActionList = Service.DataManager.GameData.Excel.GetSheet<Action>(Language.English);
+            var enActionList = Service.DataManager.GetExcelSheet<Action>(Dalamud.Game.ClientLanguage.English);
             var enSkill = enActionList.GetRow(skillID);
             var level = enSkill.ClassJobLevel != 0 ? $" (lvl {enSkill.ClassJobLevel})" : string.Empty;
-            var actionList = Service.DataManager.GameData.Excel.GetSheet<Action>();
+            var actionList = Service.DataManager.GetExcelSheet<Action>(Service.ClientState.ClientLanguage);
             var skill = actionList.GetRow(skillID);
             return $"{skill.Name}\n{enSkill.Name}{level}";
         }
         else
         {
-            var actionList = Service.DataManager.GameData.Excel.GetSheet<Action>();
+            var actionList = Service.DataManager.GetExcelSheet<Action>(Service.ClientState.ClientLanguage);
             var skill = actionList.GetRow(skillID);
             var level = skill.ClassJobLevel != 0 ? $" (lvl {skill.ClassJobLevel})" : string.Empty;
             return $"{skill.Name}{level}";
@@ -1147,7 +1147,7 @@ public class ConfigWindow : Window
         if (skillID > 60000)
             return String.Empty;
 
-        var statusList = Service.DataManager.GameData.Excel.GetSheet<Status>();
+        var statusList = Service.DataManager.GetExcelSheet<Status>(Service.ClientState.ClientLanguage);
         var status = statusList.GetRow(skillID);
         return status.Name.ExtractText();
 
