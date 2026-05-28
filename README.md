@@ -1,1 +1,1 @@
-下载发布页文件然后照做
+库链 `https://raw.githubusercontent.com/lichi7887/MyDalamudPlugins/master/pluginmaster.json` 
