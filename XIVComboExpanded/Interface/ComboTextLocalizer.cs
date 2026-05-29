@@ -16,9 +16,9 @@ internal static class ComboTextLocalizer
     {
         ["Any"] = "任意",
         ["Disabled"] = "禁用",
-        ["Stance over Provoke"] = "挑衅切坦姿",
-        ["Stance Removal while on CD"] = "挑衅冷却时切关闭坦姿",
-        ["Stance Removal over Shirk"] = "退避切关闭坦姿",
+        ["Stance over Provoke"] = "挑衅切盾姿",
+        ["Stance Removal while on CD"] = "挑衅冷却时切关闭盾姿",
+        ["Stance Removal over Shirk"] = "退避切关闭盾姿",
         ["Silent Peloton"] = "自动速行",
         ["Swift Raise Feature"] = "复活技能切即刻咏唱",
         ["Disable for VerRaise"] = "赤复活例外",
